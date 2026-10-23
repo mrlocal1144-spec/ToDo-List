@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #100b25, #211044, #111827);
+    color: white;
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: radial-gradient(circle at top left, #6d28d933, transparent 35%),
+                radial-gradient(circle at bottom right, #06b6d433, transparent 30%);
+}
+
+.app .content {
+    width: 480px;
+    max-width: 100%;
+    min-height: 650px;
+    max-height: 90vh;
+    border: 1px solid #ffffff20;
+    border-radius: 28px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background: #ffffff0b;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 70px #00000050, inset 0 1px 1px #ffffff15;
+    overflow: hidden;
+}
+
+.app .content div {
+    border-radius: 16px;
+}
+
+.app .content .header {
+    min-height: 125px;
+    width: 100%;
+    border: none;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(120deg, #7c3aed, #4f46e5, #2563eb);
+    box-shadow: 0 10px 30px #6d28d940;
+
+    img{
+      border-radius: 50%;
+    }
+}
+
+.app .content .header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.app .content .header p {
+    color: #e0e7ff;
+    font-size: 14px;
+}
+
+.app .content .search {
+    height: 55px;
+    min-height: 55px;
+    width: 100%;
+    border: 1px solid #ffffff20;
+    background: #ffffff0d;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.app .content .search form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.app .content .search form input {
+    width: 100%;
+    min-width: 0;
+    padding: 0 16px;
+    outline: 0;
+    font-size: 15px;
+    border: 0;
+    color: white;
+    background: transparent;
+}
+
+.app .content .search input::placeholder {
+    color: #a5a0bb;
+}
+
+.app .content .main {
+    flex: 1;
+    min-height: 100px;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    background: transparent;
+    box-shadow: none;
+}
+
+.app .content .main .pag{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+  gap: 30px;
+  button{
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    background: transparent;
+    border-color: #100b25;
+  }
+}
+.app .content .main .pag button:hover{
+  background-color: #2563eb;
+}
+.app .content .main::-webkit-scrollbar {
+    width: 5px;
+}
+
+.app .content .main::-webkit-scrollbar-thumb {
+    background: #8b5cf6;
+    border-radius: 10px;
+}
+
+.app .content .main li {
+    min-height: 58px;
+    padding: 13px;
+    border: 1px solid #ffffff12;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    gap: 12px;
+    background: #ffffff0b;
+    transition: 0.3s ease;
+    list-style: none;
+}
+
+
+.app .content .main li label {
+    flex-grow: 1;
+    color: #f3f0ff;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.app .content .main li input {
+    height: 19px;
+    width: 19px;
+    accent-color: #a78bfa;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.app .content .main li svg {
+    font-size: 21px;
+    color: #fb7185;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.app .content .main li svg:hover {
+    color: #fda4af;
+    transform: scale(1.15);
+}
+
+.app .content .footer {
+    height: 58px;
+    min-height: 58px;
+    width: 100%;
+    border: 1px solid #ffffff15;
+    overflow: hidden;
+    background: #ffffff0d;
+    box-shadow: none;
+    display: flex;
+    gap: 5px;
+}
+
+.app .content .footer form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.app .content .footer form input {
+    width: 75%;
+    min-width: 0;
+    padding: 0 15px;
+    outline: 0;
+    font-size: 15px;
+    border: 0;
+    color: white;
+    background: transparent;
+}
+
+.app .content .footer input::placeholder {
+    color: #a5a0bb;
+}
+
+.app .content .footer button {
+    width: 25%;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
